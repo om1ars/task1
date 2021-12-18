@@ -1,6 +1,7 @@
 "use strict";
 console.clear();
-(o) => {
+
+((o) => {
   function dscount(text, s1, s2) {
     let exp = new RegExp(s1 + s2, "gi");
     let result = text.match(exp);
@@ -15,6 +16,7 @@ console.clear();
     test(dscount, ["_ba______", "a", "b"], 0);
     test(dscount, ["_a__b____", "a", "b"], 0);
     test(dscount, ["-ab-аb-ab", "a", "b"], 2);
+
     console.info("Congratulations! All tests success passed.");
   } catch (e) {
     console.error(e);
@@ -25,4 +27,4 @@ console.clear();
     if (!r) throw "Test failed!";
   }
   return;
-};
+});

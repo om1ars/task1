@@ -1,6 +1,6 @@
 "use strict";
 console.clear();
-(o) => {
+((o) => {
   function dscount(text, s1, s2) {
     let exp = new RegExp(s1 + s2, "gi");
     let result = text.match(exp);
@@ -25,4 +25,4 @@ console.clear();
     if (!r) throw "Test failed!";
   }
   return;
-};
+});
